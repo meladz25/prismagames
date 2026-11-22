@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 680" fill="none"><defs>
+  <linearGradient id="prism" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8C39F5"/><stop offset=".48" stop-color="#D52BDD"/><stop offset=".78" stop-color="#F14C91"/><stop offset="1" stop-color="#FFB34D"/></linearGradient>
+  <linearGradient id="prism2" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7730F5"/><stop offset=".55" stop-color="#D92BD1"/><stop offset="1" stop-color="#FF9850"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#6E37A9" stop-opacity=".42"/><stop offset="1" stop-color="#6E37A9" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="1" y="1" width="628" height="678" rx="28" fill="#171421" stroke="#40334E"/>
+<path d="M1 28Q1 1 28 1H602Q629 1 629 28V52H1V28Z" fill="#211B2D"/>
+<circle cx="29" cy="26" r="5" fill="#F16E83"/><circle cx="47" cy="26" r="5" fill="#FFB84D"/><circle cx="65" cy="26" r="5" fill="#76D5A7"/>
+<rect x="128" y="14" width="374" height="25" rx="12.5" fill="#0E0C15" stroke="#443451"/>
+<text x="315" y="30" text-anchor="middle" fill="#BFB5CC" font-size="10" font-family="Courier New">PLAY.PRIZMA-IGR / CONCEPT 01</text>
+<rect x="24" y="74" width="582" height="580" rx="18" fill="#17182B"/>
+<ellipse cx="382" cy="265" rx="210" ry="205" fill="url(#glow)"/>
+<rect x="50" y="100" width="105" height="32" rx="16" fill="#120F1C" stroke="#5B426E"/><text x="102" y="120" text-anchor="middle" fill="#C9A7F5" font-size="10" font-family="Courier New">DEMO / 01</text>
+<rect x="471" y="100" width="105" height="32" rx="16" fill="#120F1C" stroke="#5B426E"/><text x="523" y="120" text-anchor="middle" fill="#C9A7F5" font-size="10" font-family="Courier New">WEBGL</text>
+<path d="M24 470L123 330L220 422L322 278L414 388L606 256V654H24V470Z" fill="#35264E"/>
+<path d="M24 515L125 400L224 485L325 360L416 460L606 340V654H24V515Z" fill="#49316A"/>
+<path d="M24 560L126 470L224 550L326 445L416 530L606 420V654H24V560Z" fill="#2A203D"/>
+<circle cx="352" cy="354" r="86" stroke="#B58BEA" stroke-width="1.2" stroke-dasharray="4 9" opacity=".7"/>
+<path d="M352 294L397 329L386 392L333 408L292 366L310 316Z" fill="url(#prism)"/>
+<path d="M352 294L352 354L310 316Z" fill="#D9B4FF" opacity=".65"/><path d="M352 354L397 329L386 392L352 354Z" fill="#FF7B9E" opacity=".38"/>
+<path d="M64 654L185 476L305 654M308 654L430 456L552 654" stroke="#A34BFA" stroke-width="2"/>
+<text x="50" y="627" fill="#B9A9CC" font-size="10" font-family="Courier New">ВИЗУАЛЬНЫЙ ПРОТОТИП</text><text x="575" y="627" text-anchor="end" fill="#B9A9CC" font-size="10" font-family="Courier New">1440 × 900</text>
+</svg>

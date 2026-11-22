@@ -1,0 +1,1059 @@
+/* Сброс и общие настройки */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+
+body {
+	background: #090910;
+	color: #f8f7fb;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+	
+img {
+	display: block;
+	max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul,
+ol {
+	padding-left: 22px;
+}
+
+.wrap {
+	width: 90%;
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 88px 0;
+}
+
+.dark {
+	background: #090910;
+	color: #f8f7fb;
+}
+
+.light {
+	background: #f2eff7;
+	color: #17131f;
+}
+
+/* Шапка сайта */
+
+.header {
+	padding: 24px 0;
+	background: #090910;
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.logo {
+	display: block;
+	width: 200px;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 18px;
+}
+
+.nav a {
+	color: #c5bece;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.nav a:hover {
+	color: #bd84ff;
+}
+
+/* Кнопки */
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	min-height: 52px;
+	padding: 0 24px;
+	border: 1px solid transparent;
+	border-radius: 13px;
+	font-size: 13px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.btn span {
+	font-size: 20px;
+	line-height: 1;
+}
+
+.btn-main {
+	background: linear-gradient(105deg, #8531f4, #d72dc7 55%, #ff9850);
+	color: #ffffff;
+}
+
+.btn-main:hover {
+	box-shadow: 0 7px 20px rgba(163, 55, 231, 0.24);
+	transform: translateY(-2px);
+}
+
+.btn-main:active {
+	box-shadow: none;
+	transform: translateY(0);
+}
+
+.btn-line {
+	border-color: #74558f;
+	background: #171421;
+	color: #f8f7fb;
+}
+
+.btn-line:hover {
+	border-color: #b27be9;
+	background: #251a33;
+}
+
+.btn:focus,
+a:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 2px solid #d6a7ff;
+	outline-offset: 3px;
+}
+
+.head-btn {
+	white-space: nowrap;
+}
+
+/* Подписи и заголовки */
+
+.label {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-bottom: 34px;
+	color: #898697;
+	font-family: "Courier New", monospace;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.label span:first-child {
+	color: #bd89ff;
+}
+
+.section-head {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-bottom: 42px;
+}
+
+.section-head h2,
+.faq-title h2 {
+	font-size: 46px;
+	line-height: 1.08;
+	font-weight: 800;
+	letter-spacing: -1.8px;
+	text-transform: uppercase;
+}
+
+.section-head p,
+.faq-title > p {
+	max-width: 570px;
+	color: #b6b0c0;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.light .label {
+	color: #797286;
+}
+
+.light .label span:first-child {
+	color: #9c5bec;
+}
+
+.light .section-head p {
+	color: #716b7b;
+}
+
+.note {
+	margin-top: 28px;
+	color: #898697;
+	font-family: "Courier New", monospace;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.light .note {
+	color: #80798a;
+}
+
+/* 01. Первый экран */
+
+.hero {
+	padding: 88px 0 92px;
+}
+
+.hero-row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 52px;
+}
+
+.hero-info,
+.hero-img {
+	flex: 1 1 440px;
+}
+
+.hero-info {
+	padding-top: 28px;
+}
+
+.overline {
+	margin-bottom: 28px;
+	color: #c4a5f0;
+	font-family: "Courier New", monospace;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.hero h1 {
+	font-size: 62px;
+	line-height: 1.05;
+	font-weight: 800;
+	letter-spacing: -2.8px;
+	text-transform: uppercase;
+}
+
+.hero-name {
+	margin: 18px 0 22px;
+	font-size: 54px;
+	line-height: 1;
+	font-weight: 900;
+	font-style: italic;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+}
+
+.hero-name span {
+	background: linear-gradient(100deg, #862ef3, #e235c3, #ff8b55);
+	background-clip: text;
+	color: transparent;
+}
+
+.hero-desc {
+	max-width: 500px;
+	color: #b6b0c0;
+	font-size: 17px;
+	line-height: 1.65;
+}
+
+.hero-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin-top: 34px;
+}
+
+.hero-note {
+	margin-top: 50px;
+	color: #898697;
+	font-family: "Courier New", monospace;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.hero-img img {
+	width: 100%;
+}
+
+/* 02. Форматы разработки */
+
+.format-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.format {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex: 1 1 420px;
+	gap: 20px;
+	min-height: 158px;
+	padding: 24px 26px;
+	border: 1px solid #3a2d49;
+	border-radius: 18px;
+	background: #171421;
+}
+
+.format:hover {
+	border-color: #8b54b9;
+	background: #1d1729;
+}
+
+.num {
+	color: #bd84ff;
+	font-family: "Courier New", monospace;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.format > .num {
+	position: absolute;
+	top: 20px;
+	left: 26px;
+}
+
+.format-text {
+	flex: 1;
+	padding-top: 20px;
+}
+
+.format h3 {
+	margin-bottom: 10px;
+	font-size: 21px;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.format p {
+	max-width: 390px;
+	color: #b6b0c0;
+	font-size: 14px;
+	line-height: 1.55;
+}
+
+.format img {
+	width: 72px;
+	flex: 0 0 72px;
+}
+
+/* 03. Избранные концепты */
+
+.project-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 28px;
+}
+
+.project {
+	display: block;
+	flex: 1 1 280px;
+	overflow: hidden;
+	border: 1px solid #3a2d49;
+	border-radius: 18px;
+	background: #171421;
+}
+
+.project:hover {
+	border-color: #9a52d4;
+}
+
+.project-img {
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+}
+
+.project-info {
+	padding: 24px;
+}
+
+.project-label,
+.project-type {
+	color: #c4a5f0;
+	font-family: "Courier New", monospace;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.project-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.project-title h3 {
+	margin: 12px 0 8px;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+.project-title span {
+	color: #bd8cff;
+	font-size: 26px;
+}
+
+.project-type {
+	margin-bottom: 8px;
+	color: #bb8bf4;
+}
+
+.project-desc {
+	color: #b6b0c0;
+	font-size: 13px;
+}
+
+.project-note {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 18px;
+	margin-top: 28px;
+}
+
+.project-note span {
+	padding: 8px 22px;
+	border: 1px solid #58406d;
+	border-radius: 25px;
+	color: #c6a4eb;
+	font-family: "Courier New", monospace;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.project-note p {
+	color: #898697;
+	font-size: 12px;
+}
+
+/* 04. Направления работы */
+
+.service-list {
+	border-top: 1px solid #d8d1e1;
+}
+
+.service {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 18px;
+	min-height: 86px;
+	padding: 15px 0;
+	border-bottom: 1px solid #d8d1e1;
+}
+
+.service .num {
+	flex: 0 0 38px;
+	color: #9850e8;
+}
+
+.service h3 {
+	flex: 1 1 240px;
+	font-size: 19px;
+	text-transform: uppercase;
+}
+
+.service p {
+	flex: 1 1 400px;
+	color: #777180;
+	font-size: 14px;
+}
+
+/* 05. Веб как платформа */
+
+.platform-row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.platform-img {
+	flex: 2 1 540px;
+}
+
+.platform-img img {
+	width: 100%;
+}
+
+.point-list {
+	display: flex;
+	flex: 1 1 260px;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.point h3 {
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #4a3a5b;
+	color: #c6a0f0;
+	font-family: "Courier New", monospace;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.point p {
+	color: #b6b0c0;
+	font-size: 15px;
+	line-height: 1.55;
+}
+
+/* 06. Подход студии */
+
+.reason-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 22px;
+}
+
+.reason {
+	position: relative;
+	flex: 1 1 220px;
+	min-height: 225px;
+	padding: 56px 24px 24px;
+	border: 1px solid #3a2d49;
+	border-radius: 18px;
+	background: #171421;
+}
+
+.reason img {
+	position: absolute;
+	top: 22px;
+	right: 22px;
+	width: 48px;
+	height: 48px;
+}
+
+.reason h3 {
+	margin: 16px 0 12px;
+	font-size: 17px;
+	line-height: 1.35;
+	text-transform: uppercase;
+}
+
+.reason p {
+	color: #b6b0c0;
+	font-size: 13px;
+	line-height: 1.55;
+}
+
+/* 07. О нашей студии */
+
+.about {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 48px;
+	padding: 48px 40px 34px;
+	border-radius: 26px;
+	background: #f2eff7;
+	color: #17131f;
+}
+
+.about-img {
+	flex: 1 1 380px;
+}
+
+.about-img img {
+	width: 100%;
+}
+
+.about-text {
+	flex: 1 1 460px;
+	padding-top: 10px;
+}
+
+.about-text h2 {
+	margin-bottom: 20px;
+	font-size: 39px;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+.about-lead {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.about-name {
+	margin-bottom: 18px;
+	color: #9b39e8;
+	font-size: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.about-desc {
+	max-width: 590px;
+	margin-bottom: 24px;
+	color: #514b59;
+	font-size: 15px;
+	line-height: 1.65;
+}
+
+.about-item {
+	margin: 19px 0;
+}
+
+.about-item h3 {
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.about-item p {
+	margin: 2px 0;
+	color: #625b6a;
+	font-size: 14px;
+}
+
+.about-note {
+	width: 100%;
+	color: #8a8095;
+	font-family: "Courier New", monospace;
+	font-size: 10px;
+	font-weight: 700;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+/* 08. Этапы сотрудничества */
+
+.steps {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 18px;
+	margin-top: 58px;
+}
+
+.step {
+	flex: 1 1 180px;
+	min-height: 248px;
+	padding: 24px 22px;
+	border: 1px solid #3a2d49;
+	border-radius: 17px;
+	background: #171421;
+}
+
+.step > span {
+	color: #bd84ff;
+	font-family: "Courier New", monospace;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.line {
+	width: 44px;
+	height: 3px;
+	margin: 24px 0 26px;
+	border-radius: 3px;
+	background: linear-gradient(90deg, #862ef3, #ff9850);
+}
+
+.step h3 {
+	margin-bottom: 12px;
+	font-size: 19px;
+	text-transform: uppercase;
+}
+
+.step p {
+	color: #b6b0c0;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+/* 09. Частые вопросы */
+
+.faq-row {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 48px;
+}
+
+.faq-title {
+	flex: 1 1 300px;
+}
+
+.faq-title .label {
+	margin-bottom: 45px;
+}
+
+.faq-title h2 {
+	margin-bottom: 22px;
+}
+
+.faq-title > p {
+	color: #777180;
+}
+
+.faq-list {
+	flex: 1 1 560px;
+	padding-top: 35px;
+}
+
+.faq-item {
+	margin-bottom: 14px;
+	padding: 0 22px;
+	border: 1px solid #ded7e7;
+	border-radius: 16px;
+	background: #ffffff;
+}
+
+.faq-item summary {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	min-height: 82px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 700;
+	list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+	display: none;
+}
+
+.faq-num {
+	flex: 0 0 34px;
+	color: #9b50ea;
+	font-family: "Courier New", monospace;
+	font-size: 11px;
+}
+
+.plus {
+	margin-left: auto;
+	color: #963bf0;
+	font-size: 22px;
+}
+
+.faq-item[open] .plus {
+	transform: rotate(45deg);
+}
+
+.faq-item > p {
+	margin: -8px 32px 20px 46px;
+	color: #777180;
+	font-size: 13px;
+	line-height: 1.55;
+}
+
+.faq-note {
+	width: 100%;
+	margin-top: 10px;
+	color: #81798b;
+	font-family: "Courier New", monospace;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* 10. Форма обратной связи */
+
+.contact {
+	padding: 42px 0 76px;
+}
+
+.contact-card {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 48px;
+	padding: 46px 48px;
+	border: 1px solid #3a2d49;
+	border-radius: 24px;
+	background: #171421;
+}
+
+.contact-info {
+	display: flex;
+	flex: 1 1 360px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.contact-info .label {
+	margin-bottom: 42px;
+}
+
+.contact-info h2 {
+	margin-bottom: 22px;
+	font-size: 46px;
+	line-height: 1.08;
+	letter-spacing: -1.6px;
+	text-transform: uppercase;
+}
+
+.contact-info > p {
+	max-width: 430px;
+	margin-bottom: 30px;
+	color: #b6b0c0;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.contact-brand {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	margin-top: auto;
+	padding-top: 56px;
+}
+
+.contact-brand strong {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.contact-brand span {
+	color: #898697;
+	font-family: "Courier New", monospace;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* Форма */
+
+.form {
+	flex: 1 1 400px;
+	padding: 36px 34px 28px;
+	border-radius: 18px;
+	background: #f2eff7;
+	color: #17131f;
+}
+
+.form-label {
+	color: #9a4dea;
+	font-family: "Courier New", monospace;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.form h3 {
+	margin: 14px 0 8px;
+	font-size: 28px;
+}
+
+.form-text {
+	margin-bottom: 28px;
+	color: #827a8c;
+	font-size: 13px;
+}
+
+.field-label {
+	display: block;
+	margin: 18px 0 8px;
+	color: #71697c;
+	font-family: "Courier New", monospace;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.form input[type="text"],
+.form textarea,
+.form select {
+	width: 100%;
+	padding: 15px 17px;
+	border: 1px solid #ddd5e8;
+	border-radius: 9px;
+	background: #ffffff;
+	color: #211b2a;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.form input[type="text"],
+.form select {
+	min-height: 52px;
+}
+
+.form textarea {
+	min-height: 84px;
+	resize: vertical;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+	color: #aaa2b4;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+	border-color: #9c55e7;
+}
+
+.optional {
+	color: #a49bad;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	text-transform: none;
+}
+
+.agree {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	margin-top: 18px;
+	color: #71697c;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.agree input {
+	width: 16px;
+	height: 16px;
+	margin-top: 2px;
+}
+
+.agree a {
+	color: #8740c9;
+	text-decoration: underline;
+}
+
+.form-btn {
+	width: 100%;
+	margin-top: 22px;
+}
+
+.form-note {
+	margin-top: 14px;
+	color: #898195;
+	font-size: 11px;
+	line-height: 1.45;
+}
+
+/* Футер сайта */
+
+.footer {
+	padding-bottom: 24px;
+	background: #090910;
+}
+
+.foot {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 48px;
+	padding: 42px 0 38px;
+	border-top: 1px solid #30273a;
+}
+
+.foot-about {
+	flex: 2 1 240px;
+}
+
+.foot-logo {
+	display: block;
+	width: 180px;
+	margin-bottom: 24px;
+}
+
+.foot-logo img {
+	width: 100%;
+}
+
+.foot-about p {
+	color: #b6b0c0;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+.foot-col {
+	display: flex;
+	flex: 1 1 140px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.foot-col h3 {
+	margin-bottom: 20px;
+	color: #bd8af3;
+	font-family: "Courier New", monospace;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.foot-col a {
+	margin-bottom: 12px;
+	color: #b6b0c0;
+	font-size: 13px;
+}
+
+.foot-col a:hover {
+	color: #bd84ff;
+}
+
+.foot-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 16px;
+	padding-top: 18px;
+	border-top: 1px solid #30273a;
+	color: #898195;
+	font-family: "Courier New", monospace;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* дополнительная и бесполезнная шняга */
+
+/* ::selection {
+	background: #8a39e9;
+	color: #ffffff;
+} */
